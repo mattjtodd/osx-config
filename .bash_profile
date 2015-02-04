@@ -7,6 +7,7 @@ export TERM=xterm-256color
 # set the bash prompt formatting to be <user>@<machine>:<path>$
 export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
+# Add a function to set the jdk version more easily
 function setjdk() {
   if [ $# -ne 0 ]; then
    removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'
