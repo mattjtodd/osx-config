@@ -1,8 +1,11 @@
-# Set CLICOLOR if you want Ansi Colors in iTerm2 
+# Set CLICOLOR if you want Ansi Colors in iTerm2
 export CLICOLOR=1
 
 # Set colors to match iTerm2 Terminal Colors
 export TERM=xterm-256color
+
+# set the bash prompt formatting to be <user>@<machine>:<path>$
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$ "
 
 function setjdk() {
   if [ $# -ne 0 ]; then
@@ -18,5 +21,3 @@ function setjdk() {
   export PATH=$(echo $PATH | sed -E -e "s;:$1;;" -e "s;$1:?;;")
  }
 setjdk 1.8
-
-export DOCKER_HOST=tcp://localhost:4243
