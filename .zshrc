@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+export CLICOLOR=1
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -94,3 +96,5 @@ function setjdk() {
  }
  setjdk 1.8
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

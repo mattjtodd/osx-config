@@ -1,8 +1,42 @@
-syntax enable
-colorscheme badwolf
+set nocompatible              " be iMproved, required
+filetype on                   " required for compatibility with Mac OS X, See issue #167
+filetype off                  " required
 
-set tabstop=4       " number of visual spaces per TAB
-set softtabstop=4   " number of spaces in tab when editing
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'derekwyatt/vim-scala'
+Plugin 'pangloss/vim-javascript'
+"Plugin 'jelera/vim-javascript-syntax'
+Bundle 'altercation/vim-colors-solarized'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+syntax enable
+
+colorscheme solarized
+set background=dark
+
+set tabstop=2       " number of visual spaces per TAB
+set softtabstop=2   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 set number              " show line numbers
 set showcmd             " show command in bottom bar
@@ -17,6 +51,7 @@ set showmatch           " highlight matching [{()}]
 
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set ruler
 
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
