@@ -293,10 +293,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSColorPanelMode</key>
-	<string>0</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents/workspace</string>
+	<string>~/Documents/dev/personal/osx-config</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -305,34 +303,12 @@
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
-	<key>NSTableView Columns KeyBingingTable</key>
-	<array>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATCG
-		</data>
-		<string>198</string>
-		<data>
-		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
-		hAErATGG
-		</data>
-		<string>302</string>
-	</array>
-	<key>NSTableView Hidden Columns KeyBingingTable</key>
-	<array/>
-	<key>NSTableView Sort Ordering KeyBingingTable</key>
-	<array/>
-	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
-	<dict>
-		<key>TB Is Shown</key>
-		<integer>1</integer>
-	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>210 366 924 485 0 0 1440 877 </string>
+	<string>439 351 924 485 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>162 135 1030 734 0 0 1440 877 </string>
-	<key>NSWindow Frame iTerm Window 1</key>
-	<string>167 246 922 502 0 0 1440 877 </string>
+	<string>229 117 1048 670 0 0 1440 877 </string>
+	<key>NeverWarnAboutShortLivedSessions_0A735389-DBF9-49FB-AC0A-18C25A0AE302</key>
+	<true/>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1107,7 +1083,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/utuba/Documents/workspace</string>
+	<string>/Users/mattjtodd/Documents/dev/personal/osx-config</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1123,7 +1099,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-22T12:42:10Z</date>
+	<date>2015-04-22T11:33:51Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
