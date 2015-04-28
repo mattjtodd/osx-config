@@ -2,6 +2,8 @@ set nocompatible              " be iMproved, required
 filetype on                   " required for compatibility with Mac OS X, See issue #167
 filetype off                  " required
 
+set backspace=indent,eol,start
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
