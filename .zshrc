@@ -3,6 +3,9 @@ export ZSH=$HOME/.oh-my-zsh
 
 export CLICOLOR=1
 
+export LESSOPEN="| /usr/local/bin/src-hilite-lesspipe.sh %s"
+export LESS=' -R '
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -97,4 +100,14 @@ function setjdk() {
  setjdk 1.8
 
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:$HOME/.rvm/bin:$HOME/.cabal/bin" # Add RVM to PATH for scripting
+
+export DOCKER_TLS_VERIFY="1"
+export DOCKER_HOST="tcp://192.168.99.100:2376"
+export DOCKER_CERT_PATH="/Users/mattjtodd/.docker/machine/machines/default"
+export DOCKER_MACHINE_NAME="dev"
+
+# OPAM configuration
+. /Users/mattjtodd/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+alias npm-exec='PATH=$(npm bin):$PATH'

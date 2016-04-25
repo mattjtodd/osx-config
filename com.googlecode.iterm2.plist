@@ -271,6 +271,8 @@
 	<true/>
 	<key>HighlightTabLabels</key>
 	<true/>
+	<key>HotKeyBookmark</key>
+	<string>0A735389-DBF9-49FB-AC0A-18C25A0AE302</string>
 	<key>HotKeyTogglesWindow</key>
 	<false/>
 	<key>Hotkey</key>
@@ -294,19 +296,43 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Documents/dev/personal/osx-config</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{712, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 565}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
 	<false/>
+	<key>NSTableView Columns KeyBingingTable</key>
+	<array>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATCG
+		</data>
+		<string>198</string>
+		<data>
+		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
+		hAErATGG
+		</data>
+		<string>302</string>
+	</array>
+	<key>NSTableView Hidden Columns KeyBingingTable</key>
+	<array/>
+	<key>NSTableView Sort Ordering KeyBingingTable</key>
+	<array/>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
+	<dict>
+		<key>TB Is Shown</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame Preferences</key>
-	<string>439 351 924 485 0 0 1440 877 </string>
+	<string>847 512 924 485 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>229 117 1048 670 0 0 1440 877 </string>
+	<string>0 31 1390 846 0 0 1440 877 </string>
 	<key>NeverWarnAboutShortLivedSessions_0A735389-DBF9-49FB-AC0A-18C25A0AE302</key>
 	<true/>
 	<key>New Bookmarks</key>
@@ -447,9 +473,9 @@
 			<key>Ansi 8 Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.15170273184776306</real>
+				<real>0.12159698456525803</real>
 				<key>Green Component</key>
-				<real>0.11783610284328461</real>
+				<real>0.09450734406709671</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -471,7 +497,7 @@
 				<key>Blue Component</key>
 				<real>0.15170273184776306</real>
 				<key>Green Component</key>
-				<real>0.11783610284328461</real>
+				<real>0.14607971906661987</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -891,11 +917,11 @@
 			<key>Selection Color</key>
 			<dict>
 				<key>Blue Component</key>
-				<real>0.19370138645172119</real>
+				<real>0.5</real>
 				<key>Green Component</key>
-				<real>0.15575926005840302</real>
+				<real>0.42117592692375183</real>
 				<key>Red Component</key>
-				<real>0.0</real>
+				<real>0.30958306789398193</real>
 			</dict>
 			<key>Semantic History</key>
 			<dict>
@@ -913,7 +939,7 @@
 			<key>Shortcut</key>
 			<string></string>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Smart Cursor Color</key>
 			<true/>
 			<key>Smart Selection Rules</key>
@@ -1014,7 +1040,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.0</real>
+			<real>0.087058521807193756</real>
 			<key>Triggers</key>
 			<array/>
 			<key>Unlimited Scrollback</key>
@@ -1037,6 +1063,10 @@
 			<string>/Users/utuba</string>
 		</dict>
 	</array>
+	<key>NoSyncTimeOfLastPromo</key>
+	<real>453218208.46534199</real>
+	<key>NoSyncTimeOfLastPromoDownload</key>
+	<real>458711813.48870099</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1048,7 +1078,7 @@
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
-	<true/>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -1099,7 +1129,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-04-22T11:33:51Z</date>
+	<date>2015-07-16T03:56:24Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1140,7 +1170,11 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
-	<string>2.0.0.20150412</string>
+	<string>2.1.1</string>
 </dict>
 </plist>

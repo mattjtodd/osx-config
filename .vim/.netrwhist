@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/mattjtodd/.vim'
+let g:netrw_dirhist_2='/Users/mattjtodd/Library/Caches/IntelliJIdea14/tomcat/Unnamed_browse'
+let g:netrw_dirhist_3='/Users/mattjtodd/Library/Caches/IntelliJIdea14/tomcat/Unnamed_browse/conf'
+let g:netrw_dirhist_4='/Users/mattjtodd/Downloads/jpa-concat-issue/src/main/java'
