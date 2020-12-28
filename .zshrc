@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
+alias ls="ls --color=auto"
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -56,7 +58,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -71,64 +73,16 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="/usr/local/opt/openssl/bin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="/usr/local/opt/openldap/bin:$PATH"
+export PATH="/usr/local/opt/openldap/sbin:$PATH"
 
-export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-
-alias ls="ls --color=auto -psh"
-
-# source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme
-export PATH="/usr/local/opt/curl-openssl/bin:$PATH"
+if type brew &>/dev/null; then
+  HOMEBREW_PREFIX=$(brew --prefix)
+  # gnubin; gnuman
+  for d in ${HOMEBREW_PREFIX}/opt/*/libexec/gnubin; do export PATH=$d:$PATH; done
+  # I actually like that man grep gives the BSD grep man page
+  #for d in ${HOMEBREW_PREFIX}/opt/*/libexec/gnuman; do export MANPATH=$d:$MANPATH; done
+fi
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
-eval export PATH="/Users/matttodd/.jenv/shims:${PATH}"
-export JENV_SHELL=zsh
-export JENV_LOADED=1
-unset JAVA_HOME
-source '/usr/local/Cellar/jenv/0.5.4/libexec/libexec/../completions/jenv.zsh'
-jenv rehash 2>/dev/null
-jenv refresh-plugins
-jenv() {
-  typeset command
-  command="$1"
-  if [ "$#" -gt 0 ]; then
-    shift
-  fi
-
-  case "$command" in
-  enable-plugin|rehash|shell|shell-options)
-    eval `jenv "sh-$command" "$@"`;;
-  *)
-    command jenv "$command" "$@";;
-  esac
-}
-eval export PATH="/Users/matttodd/.jenv/shims:${PATH}"
-export JENV_SHELL=zsh
-export JENV_LOADED=1
-unset JAVA_HOME
-source '/usr/local/Cellar/jenv/0.5.4/libexec/libexec/../completions/jenv.zsh'
-jenv rehash 2>/dev/null
-jenv refresh-plugins
-jenv() {
-  typeset command
-  command="$1"
-  if [ "$#" -gt 0 ]; then
-    shift
-  fi
-
-  case "$command" in
-  enable-plugin|rehash|shell|shell-options)
-    eval `jenv "sh-$command" "$@"`;;
-  *)
-    command jenv "$command" "$@";;
-  esac
-}
+export PATH="/usr/local/opt/ruby/bin:$PATH"
