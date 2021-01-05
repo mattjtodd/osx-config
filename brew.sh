@@ -5,6 +5,7 @@ set -e && \
   brew upgrade && \
   brew install \
 	autoconf \
+	awscli \
 	bash \
 	binutils \
 	coreutils \
@@ -22,6 +23,7 @@ set -e && \
 	grep \
 	gzip \
 	jq \
+	k3d \
 	less \
 	m4 \
 	make \
